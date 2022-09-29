@@ -4,17 +4,11 @@
 # - 7 -> да
 # - 1 -> нет
 
-day_of_week = int(input("Введите цифру от 1 до 7: "))
-
-
-def WeekEnd(a):
-    if a > 0 and a <= 7:
-        if a > 0 and a <= 5:
-            print(f"{a}  -> не выходной")
-        else:
-            print(f"{a}  -> выходной")
-    else:
-        print("!!!Вы ввели не корректное значение!!!")
-
-
-WeekEnd(day_of_week)
+a = int(input("Введите цифру от 1 до 7: ")) 
+if a < 1 or a >7 :
+    print("!!!Вы ввели не корректное значение!!!")
+elif a == 6 or a == 7:
+    print(f"{a}  -> выходной")    
+else:
+    print(f"{a}  -> не выходной")
+   
